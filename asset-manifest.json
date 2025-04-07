@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Dylicious2020/portfolio.git/static/css/main.9bc478b8.css",
+    "main.js": "/Dylicious2020/portfolio.git/static/js/main.6bb078d4.js",
+    "static/js/453.1407b060.chunk.js": "/Dylicious2020/portfolio.git/static/js/453.1407b060.chunk.js",
+    "index.html": "/Dylicious2020/portfolio.git/index.html",
+    "main.9bc478b8.css.map": "/Dylicious2020/portfolio.git/static/css/main.9bc478b8.css.map",
+    "main.6bb078d4.js.map": "/Dylicious2020/portfolio.git/static/js/main.6bb078d4.js.map",
+    "453.1407b060.chunk.js.map": "/Dylicious2020/portfolio.git/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9bc478b8.css",
+    "static/js/main.6bb078d4.js"
+  ]
+}
