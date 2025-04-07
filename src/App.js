@@ -1,6 +1,6 @@
 import './App.css';
 import {useState, useEffect} from 'react';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import {HashRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Home from './Home';
 import HomeMobile from './HomeMobile';
 import Contact from './Contact';
