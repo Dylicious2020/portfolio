@@ -2,7 +2,6 @@ import {Link} from 'react-router-dom';
 
 function Sidebar(props) {
 
-  console.log(props.page);
   function handleClick(e) {
     props.setSidebarIsOpen(false);
     props.setPage(e.target.innerHTML.toLowerCase());
