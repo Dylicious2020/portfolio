@@ -13,7 +13,7 @@ function ContactMobile(props) {
     <div className="bodyContainer">
 
     </div>
-    <Sidebar sidebarIsOpen={props.sidebarIsOpen} setSidebarIsOpen={props.setSidebarIsOpen}/>
+    <Sidebar sidebarIsOpen={props.sidebarIsOpen} setSidebarIsOpen={props.setSidebarIsOpen} page = {props.page} setPage = {props.setPage}/>
   
   
       </div>

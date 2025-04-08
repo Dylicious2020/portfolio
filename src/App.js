@@ -7,6 +7,8 @@ import Contact from './Contact';
 import ContactMobile from './ContactMobile';
 import About from './About';
 import AboutMobile from './AboutMobile';
+import Projects from './Projects';
+import ProjectsMobile from './ProjectsMobile';
 
 function App() {
   const [screenSize, setScreenSize] = useState({
@@ -16,6 +18,7 @@ function App() {
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false)
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
+  const [page, setPage] = useState('home');
 
 
  
@@ -68,9 +71,10 @@ if (screenSize.width > 768) {
 return (
 <Router>
   <Routes>
-    <Route path='/' element={<Home mouseX = {mouseX} mouseY = {mouseY}/>} />
-    <Route path='/contact' element={<Contact mouseX = {mouseX} mouseY = {mouseY}/>}/>
-    <Route path='/about' element={<About mouseX = {mouseX} mouseY = {mouseY}/>}/>
+    <Route path='/' element={<Home/>} />
+    <Route path='/contact' element={<Contact/>}/>
+    <Route path='/about' element={<About/>}/>
+    <Route path='/projects' element={<Projects/>}/>
   </Routes>
 </Router>
 )
@@ -78,9 +82,10 @@ return (
   return (
     <Router>
   <Routes>
-    <Route path='/' element={<HomeMobile mouseX = {mouseX} mouseY = {mouseY} sidebarIsOpen = {sidebarIsOpen} setSidebarIsOpen = {setSidebarIsOpen}/>} />
-    <Route path='/contact' element={<ContactMobile mouseX={mouseX} mouseY={mouseY} sidebarIsOpen={sidebarIsOpen} setSidebarIsOpen={setSidebarIsOpen}/>}/>
-    <Route path='/about' element={<AboutMobile mouseX={mouseX} mouseY={mouseY} sidebarIsOpen={sidebarIsOpen} setSidebarIsOpen={setSidebarIsOpen}/>}/>
+    <Route path='/' element={<HomeMobile sidebarIsOpen = {sidebarIsOpen} setSidebarIsOpen = {setSidebarIsOpen} page = {page} setPage = {setPage}/>} />
+    <Route path='/contact' element={<ContactMobile sidebarIsOpen={sidebarIsOpen} setSidebarIsOpen={setSidebarIsOpen} page = {page} setPage = {setPage}/>}/>
+    <Route path='/about' element={<AboutMobile sidebarIsOpen={sidebarIsOpen} setSidebarIsOpen={setSidebarIsOpen} page = {page} setPage = {setPage}/>}/>
+    <Route path='/projects' element={<ProjectsMobile sidebarIsOpen={sidebarIsOpen} setSidebarIsOpen={setSidebarIsOpen} page = {page} setPage = {setPage}/>}/>
   </Routes>
 </Router>
   )

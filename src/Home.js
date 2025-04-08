@@ -8,6 +8,7 @@ function Home(props) {
         <Link className="link" to='/' style={{textDecoration: 'underline'}}>Home</Link>
         <Link className="link" to='/about'>About</Link>
         <Link className='link' to='/contact'>Contact</Link>
+        <Link className="link" to='/projects'>Projects</Link>
         </div> <br></br>
   <h1 style={{fontSize: '100px', fontWeight: '100', marginLeft: '5%', letterSpacing: '5px'}}>DYLAN WATSON</h1>
   </div>
