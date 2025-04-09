@@ -9,6 +9,7 @@ import About from './About';
 import AboutMobile from './AboutMobile';
 import Projects from './Projects';
 import ProjectsMobile from './ProjectsMobile';
+import NavigationBar from './NavigationBar';
 
 function App() {
   const [screenSize, setScreenSize] = useState({
@@ -70,6 +71,7 @@ useEffect(() => {
 if (screenSize.width > 768) {
 return (
 <Router>
+  <NavigationBar page = {page} setPage = {setPage}/>
   <Routes>
     <Route path='/' element={<Home/>} />
     <Route path='/contact' element={<Contact/>}/>
